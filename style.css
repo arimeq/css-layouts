@@ -1,33 +1,5 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-auto-rows: minmax(20px, auto);
-    grid-template-areas:
-        "banner banner banner"
-        "header header header"
-        "content content content"
-        "aside aside aside"
-        "footer footer footer";
-}
-
-@media (min-width: 770px) {
-    body {
-        grid-template-areas:
-            "header header header"
-            "content content banner"
-            "content content aside"
-            "footer footer footer";
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        grid-template-areas:
-            "header header header"
-            "content banner banner"
-            "content aside footer";
-    }
 }
 
 p {
@@ -38,24 +10,11 @@ p {
     text-align: justify;
 }
 
-header, #banner, #content, aside, footer {
+.header, .banner, .content, .aside, .footer {
     border: 1px solid black;
     padding: 1vw;
 }
 
-header {
-    grid-area: header;
-}
-#banner {
-    grid-area: banner;
-}
-#content {
-    grid-area: content;
-}
-aside {
-    grid-area: aside;
-}
-footer {
-    grid-area: footer;
+.footer {
     text-align: center;
 }
